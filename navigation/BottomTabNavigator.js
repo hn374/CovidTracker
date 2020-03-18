@@ -17,10 +17,10 @@ export default function BottomTabNavigator({ navigation, route }) {
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
-        name="Home2"
+        name="Global"
         component={NewHomeScreen}
         options={{
-          title: 'New Home',
+          title: 'Global',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
         }}
       />
@@ -52,7 +52,7 @@ function getHeaderTitle(route) {
       return 'How to get started';
     case 'Links':
       return 'Links to learn more';
-    case 'Home2':
-      return 'Home';
+    case 'Global':
+      return 'Global';
   }
 }
